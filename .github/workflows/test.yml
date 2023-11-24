@@ -37,5 +37,3 @@ jobs:
           # Save test results to a file (e.g., test-results-current.json)
           npx jest -- --json --outputFile=test-results-current.json
 
-      - name: Compare test results
-        run: node compare-test-results.js  # Replace with your script or use a GitHub Action for comparison
