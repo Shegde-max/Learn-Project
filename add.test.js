@@ -8,3 +8,6 @@ test('adds 1 + 2 to equal 3', () => {
 test('fail scenario', () => {
   expect(add(1, 1)).toBe(1);
 });
+test('Pass scenario', () => {
+  expect(add(1, 1)).toBe(2);
+});
