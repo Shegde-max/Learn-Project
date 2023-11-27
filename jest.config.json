@@ -1,10 +1,5 @@
 {
    
-    "reporters": [
-        "default",
-        ["./node_modules/jest-html-reporter", {
-            "pageTitle": "Test Report"
-        }]
-    ],
-    "testResultsProcessor": "./node_modules/jest-html-reporter"
+    "reporters": ["default"],
+    "testResultsProcessor": "jest-json-reporter"
 }
