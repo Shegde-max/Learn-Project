@@ -23,9 +23,9 @@ jobs:
       - name: Install dependencies and run tests for main branch
         run: |
           npm install
-          npx jest
+          #npx jest
           # Save test results to a file (e.g., test-results-main.json)
-          npx jest -- --json --outputFile=test-results-main.json
+          npx jest --json --outputFile=test-results-main.json
 
       - name: Checkout current branch
         uses: actions/checkout@v2
@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies and run tests for current branch
         run: |
           npm install
-          npx jest
+          #npx jest
           # Save test results to a file (e.g., test-results-current.json)
-          npx jest -- --json --outputFile=test-results-current.json
+          npx jest --json --outputFile=test-results-current.json
 
